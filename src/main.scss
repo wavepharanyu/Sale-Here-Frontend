@@ -1,6 +1,10 @@
+*{
+  font-family: "Prompt", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Prompt", sans-serif;
+
 }
 
 html,
@@ -11,15 +15,23 @@ body,
 
 .app {
   height: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  background-image: url(./assets/images/bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-.container {
-  width: 90%;
-  height: 90vh;
-  background-color: white;
-  border-radius: 20px;
-  margin-top: 40px;
+.title {
+  font-size: 37px;
+  color: #383838;
+  font-weight: bold;
+  @media (max-width: 600px) {
+      font-size: 30px;
+  }
 }
+
+.button-link{
+  text-decoration: none;
+}
+
+

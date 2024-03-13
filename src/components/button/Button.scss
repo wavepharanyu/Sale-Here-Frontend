@@ -1,0 +1,46 @@
+.button-container {
+  color: #ffffff;
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #c41417 0%,
+    #b31315 100%
+  );
+  margin-top: 35px;
+  font-size: 24px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paused{
+    animation-name: 0;
+}
+
+@keyframes initial-animation {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.button-container:hover {
+  animation-name: initial-animation, expand-animation;
+  animation-duration: 0.4s, 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+

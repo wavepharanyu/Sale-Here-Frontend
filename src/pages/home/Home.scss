@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+  
+    .button-group{
+        margin-top: 12rem;
+    }
+  }

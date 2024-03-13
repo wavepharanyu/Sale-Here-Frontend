@@ -1,7 +1,10 @@
 import React from "react";
+import CreateAccount from "./pages/createAccount/CreateAccount";
 
 const App = () => {
-  return <div className="app">Good Luck</div>;
+  return(
+      <CreateAccount/>
+  ) 
 };
 
 export default App;
